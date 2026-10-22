@@ -1,0 +1,30 @@
+# Generated Xcode projects (project.yml is the source of truth)
+*.xcodeproj
+*.xcworkspace
+
+# Build output
+DerivedData/
+.build/
+build/
+*.ipa
+*.dSYM
+
+# Snippet values and other private local state
+snippets/
+private/
+*.local.json
+
+# Research material: third-party APKs and cloned sources, never committed
+research/
+
+# Generated build artifacts
+spike/keyboard-probe/ByteBoardKeyboard/Resources/just-bash-iife.js
+spike/keyboard-probe/ByteBoardKeyboard/Resources/dicts/
+*.bbd
+spike/keyboard-probe/dd/
+
+# macOS
+.DS_Store
+
+# Machine- and person-specific signing/device values
+local.env

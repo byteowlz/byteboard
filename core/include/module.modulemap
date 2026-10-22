@@ -1,0 +1,4 @@
+module ByteBoardCore {
+    header "byteboard_core.h"
+    export *
+}

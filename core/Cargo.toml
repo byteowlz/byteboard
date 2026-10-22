@@ -1,0 +1,22 @@
+[package]
+name = "byteboard-core"
+version = "0.1.0"
+edition = "2021"
+description = "Word completion, correction and next-word prediction for byteboard, shared by the iOS keyboard and future desktop input methods"
+publish = false
+
+[lib]
+name = "byteboard_core"
+crate-type = ["staticlib", "rlib"]
+
+[[bin]]
+name = "bbdict"
+path = "src/bin/bbdict.rs"
+
+[dependencies]
+memmap2 = "0.9"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
